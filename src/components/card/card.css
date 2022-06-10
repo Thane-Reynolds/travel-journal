@@ -1,0 +1,31 @@
+.card{
+  display: flex;
+  color: var(--dark-gray);
+}
+.card--image-div{
+  height: 168px;
+  width: 125px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.card--image-div img{
+  height: 168px;
+  width: 125px;
+  opacity: 100%;
+}
+.card--textcontent{
+  display: flex;
+  flex-direction: column;
+}
+.card--toptext{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 10.25px;
+}
+.card--toptext i{
+  color: var(--red);
+}
+.card--toptext a{
+  color: var(--gray);
+}

@@ -1,0 +1,15 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  max-width: 750px;
+}
+
+@import './index.css';
+@import './components/header/header.css';
+@import './components/card/card.css';

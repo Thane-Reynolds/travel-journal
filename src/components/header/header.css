@@ -1,0 +1,23 @@
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 56px;
+  width: 100%;
+  flex-grow: 1;
+  background-color: var(--red);
+  margin-bottom: 30px;
+}
+.header--text{
+  color: white; 
+  font-size: 14.5px;
+
+}
+.header--text h1{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header--title i{
+  margin-top: 3px;
+}
