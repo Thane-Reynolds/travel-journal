@@ -1,3 +1,28 @@
+:root{
+  --font: font-family: 'Inter', sans-serif;
+  --gray: #918E9B;
+  --dark-gray: #2B283A;
+  --red: #F55A5A;
+  --row-gray: #F5F5F5;
+  --image-height-normal: 244px;
+  --image-width-normal: 181.5px;
+  --image-height-small: 168px;
+  --image-width-small: 125px;
+  --screen-sm: 800px;
+  --screen-md: 1100px;
+  --screen-lg: 1400px;
+  --font-small: 10.25px;
+  --font-medium: 12px;
+  --font-large: 14px;
+  --title-small: 25px;
+  --title-medium: 32px;
+}
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -6,10 +31,18 @@
 }
 .main{
   display: flex;
-  flex-direction: column;
-  max-width: 750px;
+  max-width: 1400px;
+  flex-flow: row wrap;
+  gap: 30px;
+  margin: 10px 30px;
+}
+@media screen and (max-width: 800px) {
+  .main{
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+  }
 }
 
-@import './index.css';
-@import './components/header/header.css';
-@import './components/card/card.css';
+@import './components/header/_header.css';
+@import './components/card/_card.css';
