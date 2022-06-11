@@ -1,4 +1,4 @@
-import './Styles.css';
+import './styles.css';
 import { Header } from './components/header/Header'
 import { Card } from './components/card/Card'
 import { data } from './data'
