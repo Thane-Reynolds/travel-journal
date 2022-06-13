@@ -1,9 +1,30 @@
 .card-holder{
   display:flex;
   flex-direction: column;
-  max-width: 75vw;
+  position: relative;
+  max-width: 600px;
   padding:0;
   margin: 0;
+  
+}
+@media screen and (max-width: 1199px) {
+  .card-holder:after{
+    height: 30px;
+    display: block;
+    background: transparent;
+    border-bottom: 1px solid var(--row-gray);
+    content: '';
+    /* responsive sizing smaller than full width */
+    width: 89%;
+    position:absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: -30px;
+    /* also need an adjusted gap, will need double the size on a media query */
+  }
+  .card-holder:last-of-type:after{
+    border: none;
+  }
 }
 .card{
   display: flex;
@@ -37,8 +58,12 @@
   font-size: var(--font-medium);
   font-weight: 400;
 }
+.card--toptext h3{
+  font-weight: normal;
+}
 .card--toptext i{
   color: var(--red);
+  padding-right: 2px;
 }
 .card--toptext a{
   color: var(--gray);

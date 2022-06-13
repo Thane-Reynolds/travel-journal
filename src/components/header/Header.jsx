@@ -1,4 +1,4 @@
-export function Header(){
+export default function Header(){
   return(
     <nav className="header">
       <div className="header--text">
