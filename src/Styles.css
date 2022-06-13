@@ -3,14 +3,17 @@
   --gray: #918E9B;
   --dark-gray: #2B283A;
   --red: #F55A5A;
-  --row-gray: #F5F5F5;
+  --row-gray: #c9c9c9;
   --image-height-normal: 244px;
   --image-width-normal: 181.5px;
+  --image-height-medium: 187px;
+  --image-width-medium: 139px;
   --image-height-small: 168px;
   --image-width-small: 125px;
   --screen-sm: 800px;
-  --screen-md: 1100px;
-  --screen-lg: 1400px;
+  --screen-md: 1000px;
+  --screen-lg: 1200px;
+  --screen-xl: 1400px;
   --font-small: 10.25px;
   --font-medium: 12px;
   --font-large: 14px;
@@ -22,19 +25,36 @@ body {
   box-sizing: border-box;
   font-family: var(--font);
 }
-
-.App {
+.App{
+  display: flex;
+  flex-direction: column;
+}
+.App-center {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  /* flex-grow: 1; */
+}
+.main-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: auto;
 }
 .main{
   display: flex;
   max-width: 1400px;
   flex-flow: row wrap;
+  justify-content: center;
   gap: 30px;
   margin: 10px 30px;
+}
+@media screen and (max-width: 1199px) {
+    .main{
+      gap: 60px;
+    }
 }
 @media screen and (max-width: 800px) {
   .main{
@@ -46,3 +66,4 @@ body {
 
 @import './components/header/_header.css';
 @import './components/card/_card.css';
+@import './components/footer/_footer.css';
