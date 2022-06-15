@@ -29,6 +29,15 @@ const data =[
     description: "Flagstaff has some amazing scenery and very well maintained trails. Tunnel spring loop is accessed through a trailhead in a neighborhood on the west side of Flagstaff, right off route 66. It's a beautiful trail, however the official trail goes through Lowell Observatory and is blocked off. There are some very nice views here.",
     image: "tunnel-spring-loop.png",
   },
-  
+  {
+    id: 4,
+    title: "Disneyland",
+    location: "Anaheim California",
+    googleMapsUrl: "https://www.google.com/maps/place/Disneyland+Park/@33.8120918,-117.9211682,17z/data=!3m1!4b1!4m5!3m4!1s0x80dcd7d12b3b5e6b:0x2ef62f8418225cfa!8m2!3d33.8120918!4d-117.9189742",
+    startDate: "14 May, 2022",
+    endDate: "17 May, 2022",
+    description: "Family Disneyland trip. The last time the youngest of my sisters-in-law was in Disneyland she was 10. The Main Street Elecrical Parade in the photo has not been in the park for over a decade and returned recently.",
+    image: "mainstreetelectricalparade2.png",
+  },
 ]
 export default data
